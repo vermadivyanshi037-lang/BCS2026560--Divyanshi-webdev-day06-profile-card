@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Profile Card</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #222;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        /* Main Heading */
+        h1 {
+            text-align: center;
+            margin: 30px;
+        }
+
+        /* Cards Container */
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            padding: 20px;
+        }
+
+        /* Profile Card */
+        .card {
+            width: 280px;
+            padding: 25px;
+            border: 2px solid #ddd;
+            border-radius: 15px;
+            text-align: center;
+            background-color: white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .name {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .title {
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+
+        .bio {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #555;
+        }
+
+        /* Dark Card */
+        .dark {
+            background-color: #222;
+            color: white;
+        }
+
+        .dark .bio {
+            color: #ddd;
+        }
+
+        /* Accent Card */
+        .accent {
+            background-color: #dbeafe;
+            border-color: #60a5fa;
+        }
+
+        /* Back To Top */
+        .top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: white;
+            padding: 12px;
+            border-radius: 50%;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav a {
+                margin: 5px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#profile">Profile</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Heading -->
+    <h1 id="home">My Profile Cards</h1>
+
+    <!-- Profile Cards -->
+    <div class="container" id="profile">
+
+        <!-- First Card -->
+        <div class="card">
+
+            <img src="https://via.placeholder.com/100"
+                 alt="Profile Picture"
+                 class="profile-img">
+
+            <div class="name">Divyanshi Verma</div>
+
+            <div class="title">B.Tech CSE Student</div>
+
+            <div class="bio">
+                I am a first-year Computer Science student
+                interested in programming and full stack
+                web development.
+            </div>
+
+        </div>
+
+        <!-- Second Card -->
+        <div class="card dark">
+
+            <img src="https://via.placeholder.com/100"
+                 alt="Profile Picture"
+                 class="profile-img">
+
+            <div class="name">Divyanshi Verma</div>
+
+            <div class="title">Web Developer</div>
+
+            <div class="bio">
+                Learning HTML, CSS, JavaScript and Java.
+                I enjoy coding and learning new technologies.
+            </div>
+
+        </div>
+
+        <!-- Third Card -->
+        <div class="card accent">
+
+            <img src="https://via.placeholder.com/100"
+                 alt="Profile Picture"
+                 class="profile-img">
+
+            <div class="name">Divyanshi Verma</div>
+
+            <div class="title">Future Full Stack Developer</div>
+
+            <div class="bio">
+                Passionate about building websites,
+                improving coding skills and creating projects.
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>Created by Divyanshi Verma | 2026</p>
+    </footer>
+
+    <!-- Back To Top Button -->
+    <a href="#home" class="top">↑</a>
+
+</body>
+</html>
